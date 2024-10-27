@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #f0e4d7, #e7f1f8); /* Dégradé de couleurs douces */
+    margin: 0;
+    font-family: 'Garamond', serif; /* Police élégante et poétique */
+}
+
+.logo {
+    text-align: center;
+    position: relative;
+}
+
+.brand-name {
+    font-size: 48px;
+    color: #3e5641; /* Couleur sombre pour le texte */
+    margin: 20px 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Ombre douce pour un effet mystique */
+    position: relative;
+    z-index: 1; /* Assure que le texte est au-dessus de la feuille */
+}
+
+.eye {
+    display: inline-block;
+    position: relative;
+    width: 20px; /* Largeur de l'œil */
+    height: 20px; /* Hauteur de l'œil */
+    background-color: #ad903e; /* Couleur douce pour l'œil */
+    border-radius: 50%; /* Forme arrondie pour l'œil */
+    border: 3px solid #3e5641; /* Bordure pour simuler la pupille */
+}
+
+.eye::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px; /* Taille de la pupille */
+    height: 10px; /* Taille de la pupille */
+    background-color: #ffffff; /* Couleur blanche de la pupille */
+    border-radius: 50%; /* Forme arrondie pour la pupille */
+    transform: translate(-50%, -50%); /* Centrer la pupille */
+}
+
+.leaf {
+    width: 50px; /* Légèrement plus large */
+    height: 25px; /* Légèrement plus grand */
+    background-color: #ad903e; /* Vert doux */
+    border-radius: 30px 30px 0 0; /* Forme de feuille arrondie */
+    position: absolute;
+    top: 50px;
+    left: 120%;
+    transform: translateX(-50%) rotate(-200deg); /* Inclinaison de la feuille */
+    z-index: 0; /* Positionne la feuille derrière le texte */
+}
+
+.leaf-right {
+    transform: translateX(-50%) rotate(-160deg); /* Inclinaison de la feuille droite */
+    left: 120%;
+    top: 50px;
+    z-index: 0; /* Positionne la feuille derrière le texte */
+}
+
+.smile {
+    width: 60px;
+    height: 30px;
+    border: 4px solid #3e5641; /* Couleur du sourire */
+    border-radius: 0 0 30px 30px; /* Arrondir le bas */
+    position: absolute;
+    top: 70px; /* Position du sourire */
+    left: 40%;
+    transform: translateX(-50%) rotate(0deg); /* Centrer le sourire */
+    opacity: 0.8; /* Légèrement translucide pour un effet léger */
+}
